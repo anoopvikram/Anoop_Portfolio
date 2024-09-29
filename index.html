@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        display: block;
+        font-family: "Inter", sans-serif;
+        margin:0%;
+        padding: 0%;
+    }
+    .mainhome{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #170835;
+        max-width:100%;
+        height:100vh;
+        gap:10px;
+    }
+    .nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        gap:50px;
+        color: #e3b8f6;
+        font-size: 20px;
+    }
+    .btxt{
+            text-decoration: none;
+            color: #e3b8f6;
+            padding: 10px 10px;
+            display: block; 
+            flex-direction: column;
+            transition: color 0.3 ease;
+    }
+    .butn{
+            background-color: #301348;
+            border: none;             
+            border-radius: 25px; 
+            cursor: pointer; 
+            position: relative; 
+            top:30px;
+            left:30px;   
+            transition: background-color 0.3s ease, transform 0.3s ease;  
+    }
+    .butn:hover{
+            background-color: #5a3775;
+            transform:scale(1.08) ;
+    }
+    .btxt:hover{
+        color: #1e0a2e;
+    }
+    .conbutn{
+        background-color: #301348;
+    }
+    .con{
+        color: #e9ddee;
+    }
+    .conbutn:hover{
+        background-color: #e9ddee;
+    }
+    .con:hover{
+        color: #5a3775;
+    }
+    .heading{
+        height: 100%;
+        width: 100%;
+        display: block;
+        position: relative;
+        top: 30%;
+        left: 40%;
+    }
+    .name{
+        font-size: 500%;
+        color: #e3b8f6;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin: 0px;
+    }
+    .dec{
+        font-size: 200%;
+        font-weight:bold;
+        color: rgb(255, 255, 255);
+        text-transform: capitalize;  
+        letter-spacing: 10px;
+        margin-top: 0px;
+
+    }
+    .wave{  
+        position: absolute;
+        bottom: -3%;
+        right: 0%;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .cloud{
+        position: absolute;
+        top:71%;
+        left:10%;
+        transition: filter 0.3s ease, transform 0.3s ease ;
+    }
+    .cloud:hover {
+        filter: brightness(1.2);
+        transform: scale(1.05);
+    }
+    .intr{
+        width: 100%;
+        height:max-content;
+        background-color: #e3b8f6;
+        color:#4f216d;
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom:60px;
+    }
+    .inthead{
+        font-size: 70px;
+        font-weight: bolder;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .intdec{
+        font-size: 40px;
+        display: block;
+        width:30%;
+        margin:auto;        
+    }
+    .propic{
+        margin-top: 70px;
+        border-radius: 50%;
+    }
+    .intdec span{
+        font-weight: bold;
+    }
+    .skillset{
+        display: flex;
+        gap:20px;
+        justify-content: space-evenly;
+        align-items: center;
+        height:fit-content;  
+        padding-top:60px;
+        padding-bottom: 60px;        
+    } 
+    .ski{
+        background-color:#e3b8f6 ;
+        width: 100%;
+    }  
+    .design{
+        display:block;          
+        text-align: center;
+        background-color: #a884c0;
+        border-radius: 30px;
+        margin-top:60px;
+        padding: 20px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        max-width:550px; 
+        height:1070px;
+        margin:20px
+    }
+    .design img{
+        width: 200px;
+    }
+    .designhead{
+        font-family: "Inter", sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .designpara{
+        font-size: 30px;
+        width:40%;
+        margin: auto;
+        font-weight: bold;
+    }
+    .designtools{
+        font-size: 40px;    
+        font-weight: bold;
+    }
+    ul{
+        font-size: 30px;
+        font-weight: bold;
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0;   
+    }
+    .dark{
+        color:#301045;
+        font-style: italic;
+    }
+    .light{
+        color:#4f216d ;
+        letter-spacing: 3px;
+        font-style: oblique;
+    }
+    @media(max-width: 660px){
+        .skillset{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    @media(max-width:590px){
+        .wave{
+            width:0px
+        }
+    }
+    @media(max-width:1200px){
+        .heading{
+        display: block;
+        gap: 5px;
+        position:relative;
+        top:17%;
+        left: 10%;
+        }
+    }
+        
+
+    .work-grid{
+        display: flex;
+        flex-wrap: wrap;
+        gap:20px;
+        justify-content: space-evenly;
+    }
+    .works{
+        background-color: #e3b8f6;
+        width: 100%;
+        height: max-content;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .witem {
+    position: relative;
+    display: inline-block;
+}
+
+.witem img {
+    width: 300px;
+    transition: opacity 1s ease;
+    border-radius: 7%;
+}
+
+.hover-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background-color:#9d68c1; /* Semi-transparent blue background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+    border-radius: 7%;
+}
+
+.hover-link {
+    color: #eac7f9;
+    font-size: 40px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+.witem:hover img {
+    opacity: 0;
+}
+
+.witem:hover .hover-box {
+    opacity:1;
+}
+.workshead{
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    color:#301045;
+    padding: 0px;
+    margin-bottom: 0px;
+    font-style: italic;
+}
+.workspara{
+    font-size: 2rem;
+    font-weight: 350;
+    text-align: center;
+    color:#ffffff;
+    padding: 0px;
+    margin-top:10px;
+    margin-bottom:100px;
+    font-style: italic;
+}
+.contact span{
+    font-weight: bold;
+}
+.contact{
+    background-color:#e3b8f6;
+    width:100%;
+    height:max-content;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top:0px;
+    padding-bottom: 60px;
+}
+.condec{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.conhead{
+    padding-top: 0px;
+}
+.con{
+    font-style: normal;
+}
+.CMB{
+    background-color:#200731;
+    color:#f6f2f8;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    width: 200px;
+    height:60px;
+    border-radius: 30px;
+    margin:auto;
+    margin-top: 30px;
+    border: 0px;
+    transition: background-color .2s ease, transform .2s ease, transform .2s ease;
+}
+.CMB:hover{
+    background-color: #754594;
+    color: #200731;
+    transform: scale(1.08);    
+}
+.footer{
+    display: block;
+    width:100%;
+    height:150px;
+    background-color:#60357d;
+    text-align: center;
+}
+.linkitem{
+    display: flex;
+    gap:90px;
+    justify-content: center;
+    padding-top: 25px;
+}
+.litem{
+    text-decoration: none;
+    color:#e3b8f6;
+    font-style: italic;
+    font-size: 22px;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+.litem:hover{
+    color: #200731;
+    transform:scale(1.12);
+}
+.company{
+    color:#f6f2f8;
+    font-size: 14px;
+    padding-top:50px ;
+}
+
+
+</style>    
+</head> 
+<body>
+    <section id="home">
+        <div class="container mainhome">
+            <div class="nav">
+                <div class="home item"><button class="butn"><a class="btxt" href="#home">Home</a></button></div>
+                <div class="intro item"><button class="butn"><a class="btxt" href="#intro">Intro</a></button></div>
+                <div class="skills item"><button class="butn"><a class="btxt" href="#skills">Skills</a></button></div>
+                <div class="projects item"><button class="butn"><a class="btxt" href="#works">Projects</a></button></div>
+                <div class="contact1 item2"><button class="conbutn butn"><a class="con btxt" href="#contact">Contact Me</a></button></div>
+            </div>
+            
+            <div class="heading">
+                <p class="name">Anoop Vikram</p>
+                <p class="dec">A Web Developer.</p>
+            </div>
+            <div class="wave"><img src="./image/wave.png" width="100%"></div>
+            <div class="cloud"><img src="./image/cloud.png" width="195px" height="110"/></div>    
+        </div>
+    </section>
+    <section id="intro">
+        <div class="intr">
+            <img class="propic" src="./image/profilepic.jpg" width="300px">
+            <p class="inthead">Hi Guys,</p>
+            <p class="intdec">I'm an engineering student, with a passion for <span>web development</span>. I’ve a love for <span>creating</span> and <span>problem-solving</span>, which naturally led me to explore the world of web development.</p>
+        </div>
+    </section>   
+    <section id="skills">
+        <div class="ski">
+        <div class="skillset">
+                <div class="design">
+                    <img src="./image/designtools.png">
+                    <p class="designhead light">Designer</p>
+                    <p class="designpara dark">I value simple content structure, clean design patterns, and thoughtful interactions.</p>
+                    <p class="designtools light">Design Tools:</p>
+                    <ul class="dark">
+                        <li>Figma</li>
+                        <li>Canva</li>
+                        <li>Pen and Paper</li>
+                    </ul>
+                </div>
+                <div class="design">
+                    <img src="./image/devtools.png">
+                    <p class="designhead light">Frontend Developer</p>
+                    <p class="designpara dark">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+                    <p class="designtools light">Dev Tools:</p>
+                    <ul class="dark">
+                        <li>VS Code</li>
+                        <li>Github</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    </section>
+    <section id="works">
+        <div class="works">
+            <p class="workshead">My Recent Work.</p>
+            <p class="workspara">Here are a few past design projects I've worked on.</p>
+            <div class="work-grid">
+                <div class="witem bday"><img src="./image/cake.jpg" width="300px"><div class="hover-box">
+                    <a href="./projects/birthday/birthday invite.html" class="hover-link">Birthday Invite Project</a>
+                </div></div>
+                <div class="witem movie"><img src="./image/movie.jpeg" width="300px"><div class="hover-box">
+                    <a href="./projects/movie ranking.html" class="hover-link">Movie Ranking Website</a>
+                </div></div>
+                <div class="witem move-it"><img src="./image/moveit.jpeg" width="300px"><div class="hover-box">
+                    <a href="./projects/Moveit/index.html" class="hover-link">Move it</a>
+                </div></div>
+                <div class="witem tindog"><img src="./image/dog.jpeg" width="300px"><div class="hover-box">
+                    <a href="./projects/TinDog Project/index.html" class="hover-link">Tindog</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact">
+            <p class="inthead conhead light con">Get In Touch.</p>
+            <p class="intdec condec light con">Ready to <span>team up</span>? Let’s set up a <span>time to chat</span>—I’ll bring the <span>coffee.</span></p>
+            <button class="CMB">Contact Me</button>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="footer">
+            <div class="linkitem">
+                <div class="litem"><a class="litem" href="https://www.linkedin.com/in/anoop-vikram-a88b69222?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BTlCUZQ%2BRQ5yYtPXET1WAxg%3D%3D">Linkedin</a></div>
+                <div class="litem"><a class="litem" href="#home">Website</a></div>
+                <div class="litem"><a class="litem" href="https://www.instagram.com/anoop.vikram">Instagram</a></div>
+            </div>
+            <div class="company">© Anoop Vikram</div>
+        </div>
+    </section>
+</body>         
+</html>
