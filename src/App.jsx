@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 // Lazy load other pages
 const Dev = lazy(() => import('./pages/Dev'));
-const Anime = lazy(() => import('./pages/anime'));
+const Anime = lazy(() => import('./pages/Anime'));
 const Contact = lazy(() => import('./pages/Contact'));
 const About = lazy(() => import('./pages/About'));
 
