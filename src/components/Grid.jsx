@@ -10,7 +10,7 @@ function Grid(){
     return(
         <div className="grid-container">
             <div className="grid-item web" onClick={() => navigate('/dev')}>
-                <img src="/src/assets/developer.webp" className="developer" alt="Developer"  />
+                <img src="/public/assets/developer.webp" className="developer" alt="Developer"  />
             </div>
             
             <div className="grid-item social">
@@ -26,12 +26,12 @@ function Grid(){
             </div>
 
             <div className="grid-item image" onClick={() => navigate('/about')}>
-                <img src="/src/assets/profile.webp" className="profile-image" alt="Profile" />
+                <img src="/public/assets/profile.webp" className="profile-image" alt="Profile" />
             </div>
 
 
             <div className="grid-item animate" onClick={() => navigate('/animation')}>
-                <img src="/src/assets/animate.webp" className="animator" alt="Animator"  />
+                <img src="/public/assets/animate.webp" className="animator" alt="Animator"  />
             </div>
 
             <div className="grid-item contact">
