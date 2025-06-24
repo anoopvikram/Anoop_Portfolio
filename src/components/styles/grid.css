@@ -149,7 +149,7 @@
 }
 
 .send {
-  background: url('/public/assets/send.png') center/cover no-repeat;
+  background: url('/assets/send.png') center/cover no-repeat;
   width: 50px;
   height: 50px;
   transform: translateX(-200px);
@@ -193,7 +193,7 @@
 
 
 .insta{
-  background: url('/public/assets/insta.png') center/cover no-repeat;
+  background: url('/assets/insta.png') center/cover no-repeat;
   width:80px;
   height: 80px;
   transition: all 0.3s ease, filter 0.3s ease;
@@ -201,13 +201,13 @@
 
 .insta:hover {
   transform: scale(1.1);
-  background: url('/public/assets/instax.png') center/cover no-repeat;
+  background: url('/assets/instax.png') center/cover no-repeat;
   filter: drop-shadow(5px 5px 10px #000000);
   cursor: pointer;
 }
 
 .linkedin{
-  background: url('/public/assets/linkedin.png') center/cover no-repeat;
+  background: url('/assets/linkedin.png') center/cover no-repeat;
   width: 80px;
   height:80px;
   transition: all 0.3s ease, filter 0.3s ease;
@@ -215,13 +215,13 @@
 
 .linkedin:hover {
   transform: scale(1.1);
-  background: url('/public/assets/linkedinx.png') center/cover no-repeat;
+  background: url('/assets/linkedinx.png') center/cover no-repeat;
   filter: drop-shadow(5px 5px 10px #000000);
   cursor: pointer;
 }
 
 .youtube{
-  background: url('/public/assets/youtube.png') center/cover no-repeat;
+  background: url('/assets/youtube.png') center/cover no-repeat;
   width: 80px;
   height:80px;
   transition: all 0.3s ease, filter 0.3s ease;
@@ -229,7 +229,7 @@
 
 .youtube:hover {
   transform: scale(1.1);
-  background: url('/public/assets/youtubex.png') center/cover no-repeat;
+  background: url('/assets/youtubex.png') center/cover no-repeat;
   filter: drop-shadow(5px 5px 10px #000000);
   cursor: pointer;
 }
