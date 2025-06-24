@@ -1,0 +1,26 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  background-color: #0f0f0f;
+  color: #fff;
+  height: 100%;
+  font-family: "Share Tech", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+#cursor-preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 460px;
+  height: 230px;
+  pointer-events: none;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity .5s ease, transform 0.05s ease;
+  z-index: 9999;
+}

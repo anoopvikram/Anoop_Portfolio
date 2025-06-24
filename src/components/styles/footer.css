@@ -1,0 +1,29 @@
+.site-footer {
+  background: #0f0f0f;
+  padding: 20px 30px;
+  color: #868686;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 15px;
+}
+
+.footer-socials a {
+  color: #c0bb8d;
+  font-size: 1.5rem;
+  transition: 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #ffffff;
+}
+
+.footer-copy {
+  font-size: 0.9rem;
+  color: #555;
+}

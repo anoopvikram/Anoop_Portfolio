@@ -1,0 +1,23 @@
+nav {
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 1% 0 2%;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link {
+  color: #868686;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.nav-link.active {
+  color: #fff;
+}

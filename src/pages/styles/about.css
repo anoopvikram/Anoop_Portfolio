@@ -1,0 +1,43 @@
+.about-page {
+  background: #0f0f0f;
+  min-height: 100vh;
+  padding: 30px 30px;
+  color: #ffffff;
+}
+
+.page-title {
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 7px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.page-desc {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #868686;
+  margin-bottom: 40px;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: #cfcfcf;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  line-height: 1.8;
+}
+
+.about-content a {
+  color: #f6eb8d;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.about-content a:hover {
+  color: #7a3535;
+}
