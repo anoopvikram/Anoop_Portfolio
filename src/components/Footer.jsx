@@ -2,6 +2,7 @@ import React from "react";
 import { FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import "./styles/footer.css";
 
+
 function Footer() {
   return (
     <footer className="site-footer">
