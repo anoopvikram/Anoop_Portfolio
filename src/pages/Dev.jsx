@@ -5,6 +5,14 @@ import "./styles/dev.css";
 function Dev() {
   const projects = [
     {
+      id: 0,
+      title: "P1800 Restomod Showcase",
+      description: "Showcase site to explore the Volvo P1800 Restomod with details, renders, and animations.",
+      image: "/assets/p1800.webp",
+      hoverimage: "/assets/p1800-hover.webp",
+      link: "https://pl800.vercel.app/"
+    },
+    {
       id: 1,
       title: "Cinescope",
       description: "Modern IMDB-style movie site where you can explore film details, ratings, and posters.",
