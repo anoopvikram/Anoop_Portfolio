@@ -14,6 +14,14 @@ function Dev() {
     },
     {
       id: 1,
+      title: "VYRA Clothing Brand",
+      description: "Modern T-shirt clothing brand website built with React, Tailwind CSS, and GSAP.",
+      image: "/assets/vyra2.png",
+      hoverimage: "/assets/vyra.jpg",
+      link: "https://vyra-dusky.vercel.app/"
+    },
+    {
+      id: 2,
       title: "Cinescope",
       description: "Modern IMDB-style movie site where you can explore film details, ratings, and posters.",
       image: "/assets/movie.webp",
@@ -21,7 +29,7 @@ function Dev() {
       link: "https://cine-scope-plum.vercel.app/"
     },
     {
-      id: 2,
+      id: 3,
       title: "whatNow",
       description: "Anonymous note-sharing platform where users can post messages that vanish after 48 hours.",
       image: "/assets/whatnow.webp",
@@ -29,7 +37,7 @@ function Dev() {
       link: "https://what-now-gray.vercel.app/"
     },
     {
-      id: 3,
+      id: 4,
       title: "Keeper App",
       description: "Modern React-based note-taking app inspired by Google Keep with clean, simple UI.",
       image: "/assets/keep.webp",
@@ -37,7 +45,7 @@ function Dev() {
       link: "https://friendly-muffin-17ef3a.netlify.app/"
     },
     {
-      id: 4,
+      id: 5,
       title: "Cafe Website",
       description: "Responsive cafe website featuring an elegant menu, gallery, and contact section.",
       image: "/assets/cafe.webp",

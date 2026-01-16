@@ -26,7 +26,7 @@ function Grid(){
             </div>
 
             <div className="grid-item image" onClick={() => navigate('/about')}>
-                <img src="/assets/profile.webp" className="profile-image" alt="Profile" />
+                <img src="/assets/profile2.webp" className="profile-image" alt="Profile" />
             </div>
 
 
