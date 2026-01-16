@@ -47,7 +47,7 @@ function Grid(){
             <div className="grid-item work">
                 <p>Services Offering: </p>
                 <div className="works webdev">Web Development</div>
-                <div className="works three">3d Animation</div>
+                <div className="works three">3d Animations</div>
                 <div className="works video">Video Editing</div>
                 <div className="works product">Product Design</div>
             </div>
